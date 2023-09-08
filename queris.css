@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px) {
+  header {
+    height: 48px;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  .header__toggle {
+    display: inline;
+    color: #eee;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .header__close {
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .header__close:hover {
+    background-color: #00adb5;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #183d3d;
+    color: #eee;
+    width: 60%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__item {
+    margin: 2rem 0;
+  }
+  .show {
+    right: 0;
+  }
+
+  .hero__container {
+    padding: 7rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero__img {
+    grid-area: 1/1/2/2;
+  }
+  .btn {
+    margin: auto;
+  }
+
+  .btn button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .about .about__container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about__img img {
+    width: 350px;
+  }
+  .about .about__container {
+    margin-top: 1.5rem;
+  }
+
+  .skill__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact {
+    height: 40vh;
+  }
+
+  .contact-info-upper-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 450px) {
+}
